@@ -18,7 +18,7 @@ export default function Home() {
         exit={{ opacity: 0 }}
         transition={{ duration: 2 }}
       >
-        <p className="text-6xl text-center text-sky-600 font-bold">
+        <p className="text-2xl md:text-6xl text-center text-sky-600 font-bold">
           Aku masih banyak kurang nya, aku ngga sesempurna opa-opa korea yang
           kamu idamkan😏, tapi aku maksa pengen sama kamu wkwk
         </p>

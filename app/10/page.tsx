@@ -13,13 +13,12 @@ export default function Home() {
         transition={{ duration: 2 }}
       >
         <Image src="/my-love.jpg" className="w-full" fill alt="lovee" />
-        <p className="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] text-6xl text-center text-amber-500 opacity-90 font-bold drop-shadow-md">
+        <p className="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] text-center text-amber-500 opacity-90 font-bold drop-shadow-md text-2xl md:text-6xl">
           Yeyyyyyy ✨🎉🎊 <br />
-          I hope we can together strive to achieve our dreams
-          each other&#39;s dreams. <br /> Love You :)
-
+          I hope we can together strive to achieve our dreams each other&#39;s
+          dreams. <br /> Luv u :)
           <br />
-          04 Jan 2024
+          05 Jan 2024
         </p>
       </motion.div>
     </main>

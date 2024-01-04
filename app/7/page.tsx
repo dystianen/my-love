@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { useRouter } from "next/navigation";
 
 export default function Home() {
@@ -18,7 +19,15 @@ export default function Home() {
         exit={{ opacity: 0 }}
         transition={{ duration: 2 }}
       >
-        <p className="text-6xl text-center text-sky-600 font-bold">
+        <Image
+          src={"/pentol-4.jpeg"}
+          width={150}
+          height={150}
+          className="rounded-lg"
+          alt="boleh"
+        />
+
+        <p className="text-2xl md:text-6xl text-center text-sky-600 font-bold mt-10">
           Aku tunggu jawaban kamu di slide selanjutnya!!!
         </p>
       </motion.div>

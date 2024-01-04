@@ -17,7 +17,7 @@ export default function Home() {
         exit={{ opacity: 0 }}
         transition={{ duration: 2 }}
       >
-        <p className="text-6xl text-center text-sky-600 font-bold">
+        <p className="text-2xl md:text-6xl text-center text-sky-600 font-bold">
           Aku Pengen Ngomong Sesuatu
         </p>
       </motion.div>

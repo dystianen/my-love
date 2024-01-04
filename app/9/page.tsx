@@ -1,13 +1,14 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { useRouter } from "next/navigation";
 
 export default function Home() {
   const router = useRouter();
 
   function GakMau() {
-    var maxWidth = 300;
-    var maxHeight = 300;
+    var maxWidth = 200;
+    var maxHeight = 200;
 
     var randomTop = Math.floor(Math.random() * maxHeight);
     var randomLeft = Math.floor(Math.random() * maxWidth);
@@ -29,7 +30,14 @@ export default function Home() {
         exit={{ opacity: 0 }}
         transition={{ duration: 2 }}
       >
-        <p className="text-6xl text-center text-sky-600 font-bold">
+        <Image
+          src={"/pentol-6.png"}
+          width={150}
+          height={150}
+          className="rounded-lg"
+          alt="boleh"
+        />
+        <p className="text-2xl md:text-6xl text-center text-sky-600 font-bold mt-10">
           Will you be my lover :) ???
         </p>
         <div className="flex flex-row gap-10 mt-20 -ml-48">

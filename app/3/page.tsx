@@ -5,9 +5,9 @@ import { useRouter } from "next/navigation";
 export default function Home() {
   const router = useRouter();
 
-  setTimeout(() => {
-    router.push("/4");
-  }, 8000);
+  // setTimeout(() => {
+  //   router.push("/4");
+  // }, 8000);
 
   return (
     <main className=" min-h-screen">
@@ -18,7 +18,7 @@ export default function Home() {
         exit={{ opacity: 0 }}
         transition={{ duration: 2 }}
       >
-        <p className="text-6xl text-center text-sky-600 font-bold">
+        <p className="text-2xl md:text-6xl text-center text-sky-600 font-bold">
           Sebenernya aku suka sama kamu del dari dulu, tapi jujurly aku belum
           berani ngungkapin waktu itu hehe
         </p>
