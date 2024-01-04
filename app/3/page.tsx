@@ -5,9 +5,9 @@ import { useRouter } from "next/navigation";
 export default function Home() {
   const router = useRouter();
 
-  // setTimeout(() => {
-  //   router.push("/4");
-  // }, 8000);
+  setTimeout(() => {
+    router.push("/4");
+  }, 8000);
 
   return (
     <main className=" min-h-screen">
