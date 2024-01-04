@@ -17,6 +17,9 @@ export default function Home() {
           Yeyyyyyy ✨🎉🎊 <br />
           I hope we can together strive to achieve our dreams
           each other&#39;s dreams. <br /> Love You :)
+
+          <br />
+          04 Jan 2024
         </p>
       </motion.div>
     </main>
