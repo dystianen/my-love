@@ -52,7 +52,7 @@ export default function Home() {
               router.push("/11");
             }}
           >
-            MAU 😍
+            YES 😍
           </button>
           <button
             id="gak_mau"
@@ -60,7 +60,7 @@ export default function Home() {
             onMouseEnter={GakMau}
             onClick={GakMau}
           >
-            GAK MAU 😝
+            NO 😝
           </button>
         </div>
       </motion.div>
