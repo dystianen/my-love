@@ -41,7 +41,7 @@ export default function RootLayout({
         {!isPlay ? (
           <div className="min-h-screen flex justify-center items-center">
             <button
-              className="bg-sky-600 p-4 rounded-lg"
+              className="bg-gray-600 p-4 rounded-lg"
               onClick={() => {
                 playAudio();
                 setIsPlay(true);
