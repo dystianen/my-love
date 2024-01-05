@@ -1,8 +1,27 @@
 "use client";
+import Text from "@/components/Text/page";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+  const router = useRouter();
+
+  function GakMau() {
+    var maxWidth = 200;
+    var maxHeight = 200;
+
+    var randomTop = Math.floor(Math.random() * maxHeight);
+    var randomLeft = Math.floor(Math.random() * maxWidth);
+
+    const target = document.getElementById("gak_mau");
+
+    if (target) {
+      target.style.marginTop = randomTop + "px";
+      target.style.marginLeft = randomLeft + "px";
+    }
+  }
+
   return (
     <main className="min-h-screen">
       <motion.div
@@ -12,14 +31,38 @@ export default function Home() {
         exit={{ opacity: 0 }}
         transition={{ duration: 2 }}
       >
-        <Image src="/my-love.jpg" className="w-full" fill alt="lovee" />
-        <p className="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] text-center text-amber-500 opacity-90 font-bold drop-shadow-md text-2xl md:text-6xl">
-          Yeyyyyyy ✨🎉🎊 <br />
-          I hope we can together strive to achieve our dreams each other&#39;s
-          dreams. <br /> Luv u :)
-          <br />
-          05 Jan 2024
-        </p>
+        <Image
+          src={"/pentol-6.png"}
+          width={150}
+          height={150}
+          className="rounded-lg"
+          alt="boleh"
+        />
+        <Text>Will you be my lover :) ???</Text>
+        <div className="flex flex-row gap-10 mt-20 -ml-48">
+          <button
+            className="bg-green-300 rounded-md text-black px-5 py-2 h-max"
+            onClick={() => {
+              alert(
+                "Ditunggu notif whatsappnya :), selesai kirim jawabannya balik lagi kesini ya!!!"
+              );
+              window.open(
+                "https://wa.me/+6281336473735?text=Aku%20Mauuuuuuu%20"
+              );
+              router.push("/11");
+            }}
+          >
+            MAU 😍
+          </button>
+          <button
+            id="gak_mau"
+            className="absolute bg-red-300 rounded-md text-black px-5 py-2 left-[50%]"
+            onMouseEnter={GakMau}
+            onClick={GakMau}
+          >
+            GAK MAU 😝
+          </button>
+        </div>
       </motion.div>
     </main>
   );

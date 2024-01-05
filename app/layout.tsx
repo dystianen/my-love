@@ -1,10 +1,9 @@
 "use client";
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Quicksand } from "next/font/google";
 import "./globals.css";
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 
-const inter = Inter({ subsets: ["latin"] });
+const quicksand = Quicksand({ subsets: ["latin"] });
 
 export default function RootLayout({
   children,
@@ -34,7 +33,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={quicksand.className}>
         <audio ref={audioRef} autoPlay>
           <source src="kesempurnaan-cinta.mp3" type="audio/mpeg" />
           Your browser does not support the audio element.

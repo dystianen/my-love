@@ -1,4 +1,5 @@
 "use client";
+import Text from "@/components/Text/page";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
@@ -8,7 +9,7 @@ export default function Home() {
 
   setTimeout(() => {
     router.push("/7");
-  }, 8000);
+  }, 7000);
 
   return (
     <main className=" min-h-screen">
@@ -27,25 +28,11 @@ export default function Home() {
           alt="boleh"
         />
 
-        <p className="text-2xl md:text-6xl text-center text-sky-600 font-bold mt-10">
-          &#168;Aku pengen ngejalanin hubungan <br /> lebih dari temen maupun
-          sahabat&#168;
-        </p>
+        <Text>
+          Aku pengen ngejalanin hubungan <br /> lebih dari temen maupun
+          sahabat
+        </Text>
       </motion.div>
-      {/* <div className="flex justify-between mx-32">
-        <button
-          className=" bg-slate-400 rounded-md text-black px-5 py-2"
-          onClick={() => router.push("/5")}
-        >
-          Prev
-        </button>
-        <button
-          className=" bg-slate-400 rounded-md text-black px-5 py-2"
-          onClick={() => router.push("/7")}
-        >
-          Next
-        </button>
-      </div> */}
     </main>
   );
 }
