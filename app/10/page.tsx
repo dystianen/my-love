@@ -49,7 +49,7 @@ export default function Home() {
               window.open(
                 "https://wa.me/+6281336473735?text=Kirim%20jawaban%20kamu%20untukku"
               );
-              router.push("/11");
+              // router.push("/11");
             }}
           >
             YES 😍
