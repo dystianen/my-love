@@ -2,6 +2,8 @@
 import { Quicksand } from "next/font/google";
 import "./globals.css";
 import { useRef, useState } from "react";
+import Image from "next/image";
+import { motion } from "framer-motion";
 
 const quicksand = Quicksand({ subsets: ["latin"] });
 
@@ -40,15 +42,21 @@ export default function RootLayout({
         </audio>
         {!isPlay ? (
           <div className="min-h-screen flex justify-center items-center">
-            <button
-              className="bg-gray-600 p-4 rounded-lg"
+            <motion.div
+              className="relative hover:cursor-pointer w-max h-max"
+              initial={{ scale: 1 }}
+              whileHover={{ scale: 1.2 }}
+              transition={{ duration: 0.5 }}
               onClick={() => {
                 playAudio();
                 setIsPlay(true);
               }}
             >
-              Buka Dulu Cantik :)
-            </button>
+              <Image src="/love.png" width="400" height="400" alt="love" />
+              <div className="absolute left-[50%] top-[45%] -translate-x-[50%] -translate-y-[40%]">
+                Click Dulu Cantik :)
+              </div>
+            </motion.div>
           </div>
         ) : (
           <div className="mx-10">{children}</div>
