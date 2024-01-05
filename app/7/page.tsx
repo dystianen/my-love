@@ -28,7 +28,7 @@ export default function Home() {
           alt="boleh"
         />
         <Text>
-          Please, Aku berharap dari dulu, tapi masih aku pendam
+          Please, Aku berharap dari dulu, <br /> tapi masih aku pendam
         </Text>
       </motion.div>
     </main>
