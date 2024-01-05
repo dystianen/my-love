@@ -38,7 +38,7 @@ export default function Home() {
           className="rounded-lg"
           alt="boleh"
         />
-        <Text>Will you be my lover :) ???</Text>
+        <Text>Do you want to be my girlfriend ???</Text>
         <div className="flex flex-row gap-10 mt-20 -ml-48">
           <button
             className="bg-green-300 rounded-md text-black px-5 py-2 h-max"
