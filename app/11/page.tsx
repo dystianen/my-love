@@ -15,9 +15,9 @@ export default function Home() {
         <Image src="/my-love.jpg" className="w-full" fill alt="lovee" />
         <div className="bg-white p-4 rounded-lg absolute bottom-4 left-[50%] -translate-x-[50%] shadow-xl">
           <p className="text-xl text-center text-gray-600 font-bold">
-            &#34; Yeyyyyyy ✨🎉🎊 <br />
-            I hope we can together strive to achieve <br /> our dreams each
-            other&#39;s dreams. <br /> Luv u :)
+            Yeyyyyyy ✨🎉🎊 <br />
+            &#34;I hope we can together strive to achieve <br /> our dreams each
+            other&#39;s dreams. Luv u :)&#34;
             <br />
             05 Jan 2024 &#34;
           </p>
