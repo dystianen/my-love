@@ -1,7 +1,7 @@
 "use client";
 import { Quicksand } from "next/font/google";
 import "./globals.css";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
@@ -32,6 +32,10 @@ export default function RootLayout({
       }
     }
   };
+
+  useEffect(() => {
+    Notification.requestPermission();
+  }, [])
 
   return (
     <html lang="en">
