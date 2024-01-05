@@ -47,7 +47,7 @@ export default function Home() {
                 "Ditunggu notif whatsappnya :), selesai kirim jawabannya balik lagi kesini ya!!!"
               );
               window.open(
-                "https://wa.me/+6281336473735?text=Aku%20Mauuuuuuu%20"
+                "https://wa.me/+6281336473735?text=Kirim%20jawaban%20kamu%20untukku"
               );
               router.push("/11");
             }}
